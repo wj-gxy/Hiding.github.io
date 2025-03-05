@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>语音隐藏技术研究演示</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0 }
+        body { font-family: 'Microsoft YaHei', sans-serif; line-height: 1.6; max-width: 1200px; margin: 20px auto }
+
+        .header { text-align: center; padding: 30px; background: #2c3e50; color: white }
+        .nav { background: #34495e; overflow: hidden }
+        .nav a { float: left; display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none }
+        .nav a:hover { background: #3498db }
+
+        .chapter-card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin: 20px; padding: 20px }
+        .chapter-card img { width: 100%; height: 300px; object-fit: contain; margin-bottom: 20px }
+	.audio-player-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 定义两列 */
+            gap: 10px; /* 设置格子之间的间距 */
+        }
+        .audio-player-item {
+            background-color: #f9f9f9; /* 可选：给每个音频播放器加背景色 */
+            padding: 10px; /* 可选：增加一些内边距 */
+            border-radius: 5px; /* 可选：圆角边框 */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 可选：轻微阴影效果 */
+        }
+        .audio-name {
+            margin-bottom: 5px; /* 增加音频名称与播放器之间的间距 */
+        }
+
+        @media (max-width: 768px) {
+            .nav a { width: 50% }
+            .chapter-card { margin: 10px }
+        }
+    </style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>语音隐藏技术研究演示</title>
+</head>
+<body>
+
+<!-- 页眉 -->
+
+    <div class="header">
+        <h1>语音隐藏方法研究-博士毕业答辩演示</h1>
+        <p>基于生成式模型的语音隐藏方法研究</p>
+    </div>
+
+</body>
+</html>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="#chapter3">第三章 跨域冗余探索的语音隐藏方法</a>
+	<a href="#chapter3">第四章 基于HiFi-GAN的高质量语音隐藏方法</a>
+	<a href="#chapter3">第五章 基于归一化流的强安全的生成式语音隐藏方法</a>
+	<a href="#chapter3">第五章 基于归一化流的轻量化强鲁棒的语音隐藏方法</a>
+	<a href="#chapter3">第六章 neural codec的语音隐藏方法</a>
+    </div>
+
+    <!-- 章节内容容器 -->
+    <div class="container">
+        
+        <!-- 第一章卡片 -->
+        <div id="chapter1" class="chapter-card">
+            <h2>1. 跨域冗余探索的语音隐藏方法</h2>
+            <img src="image/VC.png" alt="方法论模型图">
+            
+            <div class="audio-player-container">
+        <!-- 第一个音频播放器 -->
+        <div class="audio-player-item">
+            <div class="audio-name">原始语音示例</div>
+            <audio controls>
+                <source src="audio/cover.wav" type="audio/wav">
+                您的浏览器不支持音频播放
+            </audio>
+        </div>
+
+        <!-- 第二个音频播放器 -->
+        <div class="audio-player-item">
+            <div class="audio-name">隐藏语音示例</div>
+            <audio controls>
+                <source src="audio_chapter1_stego.wav" type="audio/wav">
+                您的浏览器不支持音频播放
+            </audio>
+        </div>
+
+        <!-- 第三个音频播放器 -->
+        <div class="audio-player-item">
+            <div class="audio-name">隐藏语音示例</div>
+            <audio controls>
+                <source src="audio_chapter1_stego.wav" type="audio/wav">
+                您的浏览器不支持音频播放
+            </audio>
+        </div>
+
+        <!-- 第四个音频播放器 -->
+        <div class="audio-player-item">
+            <div class="audio-name">隐藏语音示例</div>
+            <audio controls>
+                <source src="audio_chapter1_stego.wav" type="audio/wav">
+                您的浏览器不支持音频播放
+            </audio>
+        </div>
+    </div>
+</div>
+
+        <!-- 第二章卡片（结构相同，替换图片和音频路径即可）-->
+        <div id="chapter2" class="chapter-card">
+            <h2>2.基于HiFi-GAN的高质量语音隐藏方法</h2>
+            <img src="image/diosu.jpg" alt="实验设计模型图">
+            
+            <div class="audio-player">
+                <div class="audio-name">测试语音A</div>
+                <audio controls>
+                    <source src="audio_chapter2_testA.wav" type="audio/wav">
+                </audio>
+                
+                <div class="audio-name">隐藏语音B</div>
+                <audio controls>
+                    <source src="audio_chapter2_stegoB.wav" type="audio/wav">
+                </audio>
+            </div>
+        </div>
+
+	<!-- 第二章卡片（结构相同，替换图片和音频路径即可）-->
+        <div id="chapter2" class="chapter-card">
+            <h2>3.基于归一化流的强安全的生成式语音隐藏方法</h2>
+            <img src="image/FlowMap.jpg" alt="实验设计模型图">
+            
+            <div class="audio-player">
+                <div class="audio-name">测试语音A</div>
+                <audio controls>
+                    <source src="audio_chapter2_testA.wav" type="audio/wav">
+                </audio>
+                
+                <div class="audio-name">隐藏语音B</div>
+                <audio controls>
+                    <source src="audio_chapter2_stegoB.wav" type="audio/wav">
+                </audio>
+            </div>
+        </div>
+
+        <!-- 第三章卡片（结构相同，替换图片和音频路径即可）-->
+        <div id="chapter3" class="chapter-card">
+            <h2 class="center-title">4. 基于归一化流的轻量化强鲁棒的语音隐藏方法</h2>
+            <img src="image/SecFlow.jpg" alt="结果分析模型图">
+            
+            <div class="audio-player">
+                <div class="audio-name">攻击检测语音</div>
+                <audio controls>
+                    <source src="audio_chapter3_attack.wav" type="audio/wav">
+                </audio>
+                
+                <div class="audio-name">鲁棒性测试语音</div>
+                <audio controls>
+                    <source src="audio_chapter3_robust.wav" type="audio/wav">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
