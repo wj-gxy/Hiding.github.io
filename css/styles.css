@@ -6,11 +6,9 @@
 }
 
 .nav-row {
-  display: flex;      /* 使用Flexbox横向排列 */
+  display: flex;      /* 强制横向排列 */
   justify-content: space-between; /* 均匀分布间距 */
-  margin-bottom: 10px; /* 行与行之间增加间距 */
 }
-
 .nav a {
   color: white;
   text-align: center;
@@ -22,4 +20,18 @@
 .nav a:hover {
   background: #3498db;
   border-radius: 5px;
+}
+.header::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #3498db;
+    margin: 20px auto;
+}
+.header h1 {
+    transition: transform 0.3s ease;
+}
+.header:hover h1 {
+    transform: translateY(-5px);
 }
